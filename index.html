@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>#Cinema Studios · Studio Hub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="shell">
+  <aside class="rail">
+    <div class="brand">#Cinema Studios<small>Studio hub</small></div>
+    <nav class="nav" aria-label="Sections">
+      <button data-view="today">Today <span class="count" id="attnCount" hidden></span></button>
+      <button data-view="jobs">Jobs</button>
+      <button data-view="brokerages">Brokerages</button>
+      <button data-view="standards">Editing standards</button>
+      <button data-view="connections">Connections</button>
+    </nav>
+    <button class="btn primary new" id="newJobBtn">Book a job</button>
+    <div class="storage" id="storageNote"></div>
+  </aside>
+  <main class="main" id="main" tabindex="-1"></main>
+</div>
+<div id="overlay"></div>
+<div id="toastHost" aria-live="polite"></div>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
